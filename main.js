@@ -28,13 +28,12 @@ function max(randomNumbers) {
 
 console.log(max(randomNumbers(5)));
 // 4. დაწერეთ ფუნქცია, რომელსაც პარამეტრად გადაეცემა მასივი და აბრუნებს შეტრიალებულ მასივს. მაგალითად თუ პარამეტრად გადავცემთ [1, 2, 3] მასივს, უნდა დააბრუნოს [3, 2, 1] მასივი.
-
-function revArray(startArray){
-  startArray = [1, 2, "a", "b", 5];     //როცა ეს გარეთ გამაქვს, რევერსს აღარ აღიქვამს. ??
-  return startArray.reverse();
+var startArray = [1, 2, "a", "b", 5];  
+function revArray(array){
+  return array.reverse();
 }
 
-console.log(revArray());
+console.log(revArray(startArray));
 
 // 5. დაწერეთ ფუნქცია, რომელიც პარამეტრად მიიღებს ნატურალურ რიცხვს და დააბრუნებს true -ს თუ რიცხვი არის მარტივი, ან false -ს თუ რიცხვი არ არის მარტივი. მარტივია რიცხვი, რომელიც მხოლოდ 1-ზე და თავისთავზე იყოფა. მარტივი რიცხვებია: 2, 3, 5, 7, 11 და ა.შ.
 function isPrime(x) {
