@@ -21,6 +21,11 @@ let randomNumbers = function (n) {
 console.log(randomNumbers(3.4));  // 4 რიცხვი გამოაქვს
 console.log(randomNumbers(3,4));  // 3 რიცხვი გამოაქვს
 // 3. დაწერეთ ფუნქცია, რომელიც პარამეტრად მიიღებს #2 ფუნქციის მიერ დაბრუნებულ მასივს randomNumbers, ამ მასივში იპოვის და დააბრუნებს უდიდეს რიცხვს.
+// function max(array) {
+//   console.log(array);
+//   return Math.max(...array);
+// }
+
 function max(randomNumbers) {
   console.log(randomNumbers);
   return Math.max(...randomNumbers);
